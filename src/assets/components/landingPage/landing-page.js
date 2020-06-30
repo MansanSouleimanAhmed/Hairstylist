@@ -2,6 +2,8 @@ import React, {Fragment} from "react";
 import Header from "../header";
 import Slide from "../slide";
 import AntiAgeImg from "../../img/models/anti-age-img.jpg";
+import {Parallax, Background} from "react-parallax";
+
 export default function LandingPage() {
     return (
         <Fragment>
@@ -29,11 +31,18 @@ export default function LandingPage() {
                         <h3>{"One of the best salon in London"}</h3>
                     </div>
                     <Slide />
+
                     <div className={"anti-age-hair-container"}>
-                        <div className={"anti-age-img"}>
-                            <img src={AntiAgeImg} />
-                        </div>
-                        <div className={"anti-age-hair-text"}>
+                        <Parallax
+                            bgImage={AntiAgeImg}
+                            strength={250}
+                            className={".img-parallax"}
+                            style={{
+                                height: "300px",
+                                background: "red",
+                            }}></Parallax>
+
+                        {/*      <div className={"anti-age-hair-text"}>
                             <h5>{"WE WANT YOUR HAIR TO LOOK FABULOUS"}</h5>
                             <h1>{"ANTI-AGE YOUR HAIR "}</h1>
                             <p>
@@ -41,7 +50,8 @@ export default function LandingPage() {
                                     "Scenester Etsy aesthetic, Cosby sweater keytclaar sustainable forage. Synth vinyl biodiesel, pour-over forage Helvetica selvage XOXO mumblecore literally pop-up locavore. Blue Bottle bicycle rights photo booth, cray single-origin coffee locavore fanny pack American Apparel cornhole hella."
                                 }
                             </p>
-                        </div>
+                        </div> */}
+                        <div className={"featured-product"}></div>
                     </div>
                 </section>
                 {/* <section className={"about-us"}>
