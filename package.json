@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@rehooks/window-scroll-position": "^1.0.1",
     "@types/react-leaflet": "^2.5.2",
     "assets": "^3.0.1",
     "leaflet": "^1.6.0",
@@ -22,12 +23,14 @@
     "react-leaflet": "^2.7.0",
     "react-mdl": "^2.1.0",
     "react-parallax": "^3.0.3",
+    "react-player": "^2.4.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scroll-parallax": "^2.3.3",
     "react-slick": "^0.26.1",
     "redux": "^4.0.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "video-react": "^0.14.1"
   },
   "devDependencies": {
     "@becode/eslint-config": "^0.10.0",

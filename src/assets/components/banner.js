@@ -24,16 +24,16 @@ const Banner = () => {
             ? settranslateXValue(0)
             : settranslateXValue(translateXValue - 100);
     };
-    /* useEffect(() => {
+    /*  useEffect(() => {
         var init = setInterval(() => {
-            //settranslateXValue(translateXValue - 100);
+            settranslateXValue(translateXValue - 100);
             // clear interval on re-render to avoid memory leaks
             console.log(translateXValue);
             if (translateXValue === -300) {
                 settranslateXValue(0);
             }
-        }, 2800); */
-    /*  return () => clearInterval(init);
+        }, 2800);
+        return () => clearInterval(init);
     }, [translateXValue]); */
     return (
         <div className={"banner-contain"}>
