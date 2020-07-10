@@ -1,71 +1,144 @@
-import React, {Fragment, useEffect, useState} from "react";
+import React, {Fragment, useLayoutEffect, useState, useEffect} from "react";
 import Header from "../header";
 import Footer from "../footer";
 import Player from "../../components/player";
 export default function Services() {
+    const [little, setLittle] = useState(0);
+    const [heightOne, setHeightOne] = useState(150);
+    const [widthOne, setWidthtOne] = useState(250);
+
+    const [size, setSize] = useState(0);
+    function sizeWidth() {
+        useLayoutEffect(() => {
+            function updateSize() {
+                setSize(window.innerWidth);
+            }
+            window.addEventListener("resize", updateSize);
+            updateSize();
+            return () => window.removeEventListener("resize", updateSize);
+        }, []);
+
+        return size;
+    }
+    console.log("fsdsdsdfd :" + sizeWidth());
+    let sizeWid;
+    sizeWid = sizeWidth();
+    useEffect(() => {
+        setLittle(sizeWid);
+        if (320 < little && little < 480) {
+            setHeightOne(150);
+            setWidthtOne(250);
+        } else if (481 < little && little < 600) {
+            setHeightOne(250);
+            setWidthtOne(300);
+        } else if (600 < little && little < 767) {
+            setHeightOne(250);
+            setWidthtOne(390);
+        } else if (767 < little && little < 1024) {
+            setHeightOne(200);
+            setWidthtOne(370);
+        } else if (1025 < little && little < 1975) {
+            setHeightOne(450);
+            setWidthtOne(400);
+        } else if (little > 1975) {
+            setHeightOne(450);
+            setWidthtOne(700);
+        }
+    });
+
+    /*  useEffect(() => {
+        if (sizeWid > 450) {
+            setHeightOne(350);
+        } else {
+            setHeightOne(10);
+        }
+    }); */
+
+    console.log("change :" + little);
+    /*   sizeWid = sizeWidth();
+    console.log(sizeWid); */
+    /*  useEffect(() => {
+       // test();
+    }, [heightOne]); */
+    // console.log(heightOne);
+    /*  let testV;
+    testV = test();
+    console.log(testV); */
+    // console.log("test :" + test());
+
+    // console.log(size);
+
     return (
         <div>
             <Header />
             <section className={"services"}>
                 <div className={"services-item"}>
                     <div className={"flex-container"}>
-                        <div className={"flex-item"}>
+                        <div
+                            className={"flex-item"}
+                            style={{width: widthOne, height: heightOne}}>
                             <h2>{"Layers"}</h2>
                             <Player
-                                height={150}
-                                width={250}
+                                height={heightOne}
+                                width={widthOne}
                                 url={
                                     "https://www.youtube.com/watch?v=Sh2EQZLzBXw"
                                 }
                             />
                             <p>
                                 {
-                                    "Every cut falls under three categories: layered, one-length, or a combination of both, says celebrity hairstylist Dwayne Ross. Layers help lessen density and create movement. One-length cuts, on the other hand, add weight. To avoid confusion and hair mishaps, double-check with your stylist. Regardless of what terminology the stylist is using, Ross recommends always asking, 'Will this technique create layers or remove them?'"
+                                    "Every cut falls under three categories: layered, one-length, or a combination of both, says celebrity hairstylist Dwayne Ross. Layers help lessen density and create movement.'"
                                 }
                             </p>
                         </div>
-                        <div className={"flex-item"}>
+                        <div
+                            className={"flex-item"}
+                            style={{width: widthOne, height: heightOne}}>
                             <h2>{"Overdirecting"}</h2>
                             <Player
-                                height={150}
-                                width={250}
+                                height={heightOne}
+                                width={widthOne}
                                 url={
                                     "https://www.youtube.com/watch?v=IE3Eg-Cp6OI"
                                 }
                             />
                             <p>
                                 {
-                                    "This is a cutting technique where hair is lifted and cut over the head to create extra body and volume, says Nick Penna Jr., owner and lead stylist of SalonCapri. Essentially, the end result is a ton of exaggerated layers. Think: shaggy, rockstar cuts, says Ross."
+                                    "Essentially, the end result is a ton of exaggerated layers. Think: shaggy, rockstar cuts, says Ross."
                                 }
                             </p>
                         </div>
-                        <div className={"flex-item"}>
+                        <div
+                            className={"flex-item"}
+                            style={{width: widthOne, height: heightOne}}>
                             <h2>{"Thinning"}</h2>
                             <Player
-                                height={150}
-                                width={250}
+                                height={heightOne}
+                                width={widthOne}
                                 url={
                                     "https://www.youtube.com/watch?v=FcTIVcYPm0Y"
                                 }
                             />
                             <p>
                                 {
-                                    "Thinning is ideal for those with thick, dense tresses who want to eliminate bulkiness. By relying on thinning shears, the process creates super-fine layers and adds dimension, says Penna. To thin with regular shears, also known as 'slithering,' stylists slide an open set of scissors along the shaft."
+                                    "To thin with regular shears, also known as 'slithering,' stylists slide an open set of scissors along the shaft."
                                 }
                             </p>
                         </div>
-                        <div className={"flex-item"}>
+                        <div
+                            className={"flex-item"}
+                            style={{width: widthOne, height: heightOne}}>
                             <h2>{"Cutting Line"}</h2>
                             <Player
-                                height={150}
-                                width={250}
+                                height={heightOne}
+                                width={widthOne}
                                 url={
                                     "https://www.youtube.com/watch?v=uO1RnThE-Eg&t=186s"
                                 }
                             />
                             <p>
                                 {
-                                    "This is a line that stylists determine for a particular hairstyle, and its angle corresponds with how close or far apart the layers will look, says Penna. 'For example, when a stylist wants to create a layered look, he will use a vertical cutting line.'"
+                                    "For example, when a stylist wants to create a layered look, he will use a vertical cutting line."
                                 }
                             </p>
                         </div>

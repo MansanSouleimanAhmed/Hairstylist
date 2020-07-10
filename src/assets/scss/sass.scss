@@ -583,7 +583,7 @@ body {
 } */
     }
 
-    //Contact
+    //Contact initial
     .contact-page {
         display: grid;
         grid-template-rows: 3fr;
@@ -614,21 +614,12 @@ body {
         }
     }
 
-    //services
+    //services initial
     .services {
         height: 1700px;
         background-color: #000000;
 
-        .flex-container>.flex-item:nth-child(1) {}
-
-        .flex-container>.flex-item:nth-child(2) {}
-
-        .flex-container>.flex-item:nth-child(3) {}
-
-        .flex-container>.flex-item:nth-child(4) {}
-
-        .flex-container>.flex-item:nth-child(5) {}
-
+        //test test
         .flex-container {
             height: 1000px;
             text-align: center;
@@ -648,7 +639,7 @@ body {
                 }
 
                 p {
-                    font-size: 1.5em;
+                    font-size: 2.3em;
                     margin: 10px 0px 10px 0px;
                     //s margin: 15px 0px 15px 0px;
                     color: #fff;
@@ -880,6 +871,23 @@ body {
 
 @media (min-width: 1975px) {
     body {
+
+        nav {
+
+            ul {
+                .nav-link {
+                    font-size: 4.1em;
+                }
+
+                #logo {
+                    img {
+                        height: 150px;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
         .landing-page {
             .header {
                 .banner-contain {
@@ -906,21 +914,56 @@ body {
             }
         }
 
-        nav {
 
-            ul {
-                .nav-link {
-                    font-size: 1.9em;
-                }
 
-                #logo {
-                    img {
-                        height: 100px;
-                        width: 100px;
+        .services {
+            height: 2200px;
+
+            .flex-container>.flex-item:nth-child(1) {
+
+                grid-column: 2;
+
+                grid-row: 2;
+            }
+
+            .flex-container>.flex-item:nth-child(2) {
+
+                grid-row: 2;
+                grid-column: 12;
+            }
+
+            .flex-container>.flex-item:nth-child(3) {
+                grid-column: 2;
+                grid-row: 10;
+
+            }
+
+            .flex-container>.flex-item:nth-child(4) {
+                grid-column: 12;
+                grid-row: 10;
+            }
+
+            .flex-container {
+                height: 2121px;
+                display: grid;
+
+
+                grid-template-columns: repeat(20, 5%);
+                grid-template-rows: repeat(20, 5%);
+
+                .flex-item {
+                    h2 {
+                        font-size: 4.5em;
+                    }
+
+                    p {
+                        font-size: 3.2em;
                     }
                 }
             }
+
         }
+
 
         .footer {
             height: 1000px;
@@ -1046,6 +1089,22 @@ body {
 
     //CSS
     body {
+        nav {
+
+            ul {
+                .nav-link {
+                    font-size: 4.1em;
+                }
+
+                #logo {
+                    img {
+                        height: 120px;
+                        width: 120px;
+                    }
+                }
+            }
+        }
+
         .landing-page {
             .header {
                 .banner-contain {
@@ -1072,20 +1131,52 @@ body {
             }
         }
 
-        nav {
+        .services {
+            height: 2200px;
 
-            ul {
-                .nav-link {
-                    font-size: 1.9em;
-                }
+            .flex-container>.flex-item:nth-child(1) {
 
-                #logo {
-                    img {
-                        height: 100px;
-                        width: 100px;
+                grid-column: 2;
+
+                grid-row: 2;
+            }
+
+            .flex-container>.flex-item:nth-child(2) {
+
+                grid-row: 2;
+                grid-column: 12;
+            }
+
+            .flex-container>.flex-item:nth-child(3) {
+                grid-column: 2;
+                grid-row: 10;
+
+            }
+
+            .flex-container>.flex-item:nth-child(4) {
+                grid-column: 12;
+                grid-row: 10;
+            }
+
+            .flex-container {
+                height: 2121px;
+                display: grid;
+
+
+                grid-template-columns: repeat(20, 5%);
+                grid-template-rows: repeat(20, 5%);
+
+                .flex-item {
+                    h2 {
+                        font-size: 4.5em;
+                    }
+
+                    p {
+                        font-size: 3.2em;
                     }
                 }
             }
+
         }
 
         .footer {
@@ -1210,11 +1301,14 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     body {
+
+
+
         nav {
 
             ul {
                 .nav-link {
-                    font-size: 1.9em;
+                    font-size: 2.2em;
                 }
 
                 #logo {
@@ -1225,6 +1319,8 @@ body {
                 }
             }
         }
+
+
 
         .landing-page {
             .header {
@@ -1244,14 +1340,60 @@ body {
                         }
 
                         #left-button {
-                            height: 50px;
-                            width: 50px;
+                            height: 70px;
+                            width: 70px;
                         }
                     }
                 }
             }
         }
 
+        .services {
+            height: 2200px;
+
+            .flex-container {}
+
+            .flex-container>.flex-item:nth-child(1) {}
+
+            .flex-container>.flex-item:nth-child(1) {
+                grid-column: 2/5;
+
+            }
+
+            .flex-container>.flex-item:nth-child(2) {
+
+                grid-row: 4;
+                grid-column: 2/5;
+            }
+
+            .flex-container>.flex-item:nth-child(3) {
+                grid-row: 6;
+                grid-column: 2/5;
+            }
+
+            .flex-container>.flex-item:nth-child(4) {
+                grid-row: 8;
+                grid-column: 2/5;
+            }
+
+            .flex-container {
+                height: 2121px;
+                display: grid;
+                grid-template-columns: repeat(5, 20%);
+                grid-template-rows: repeat(10, 10%);
+
+                .flex-item {
+                    h2 {
+                        font-size: 3.5em;
+                    }
+
+                    p {
+                        font-size: 2.9em;
+                    }
+                }
+            }
+
+        }
 
 
 
@@ -1380,122 +1522,129 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
+
     //CSS
-    body {
-        .footer {
-            height: 1420px;
-            width: 100%;
-            background-color: #000;
-            display: grid;
-            color: #fff;
-
-            .footer-item-one {
-                height: 297px;
-                width: 100%;
-                font-size: 1.3em;
-                text-align: center;
-
-                h3 {
-                    padding-top: 12px;
-                    font-size: 2.6em;
-                    //    margin-bottom: 10px;
-                    ;
-                }
-
-                .input {
+    /*   body {
 
 
+      .services {
+          background-color: red;
+      }
 
-                    input {
+      .footer {
+          height: 1420px;
+          width: 100%;
+          background-color: #000;
+          display: grid;
+          color: #fff;
 
-                        margin: 10px;
-                        width: 350px;
-                        height: 50px;
-                        text-align: center;
+          .footer-item-one {
+              height: 297px;
+              width: 100%;
+              font-size: 1.3em;
+              text-align: center;
 
-                        font-size: 1.6em;
+              h3 {
+                  padding-top: 12px;
+                  font-size: 2.6em;
+                  //    margin-bottom: 10px;
+                  ;
+              }
 
-                    }
-
-
-                }
-
-
-            }
-
-
-            .footer-item-two {
-                height: 270px;
-
-                text-align: center;
-
-                ul {
-                    padding: 0px;
-                }
-
-                h3 {
-
-                    font-size: 1.9em;
-                }
-
-                li {
-                    font-size: 1.9em;
-                }
-            }
-
-            .footer-item-three {
-
-                height: 280px;
-
-
-                text-align: center;
-
-                ul {
-                    padding: 0px;
-                }
-
-                h3 {
-
-                    font-size: 1.9em;
-                }
-
-                li {
-                    font-size: 1.9em;
-                }
-            }
-
-            .footer-item-four {
-
-                padding: 5% 5% 5% 5%;
-
-
-                table {
-
-                    font-size: 1.6em;
-                    ;
-                }
-            }
-
-            //Facebook, twitter ...
-            .footer-base {
-
-
-                .footer-base-text {
-
-                    font-size: 1.5em;
-                    text-align: center;
+              .input {
 
 
 
-                    p {
-                        padding-top: 8px;
-                    }
-                }
+                  input {
 
-            }
-        }
+                      margin: 10px;
+                      width: 350px;
+                      height: 50px;
+                      text-align: center;
 
-    }
+                      font-size: 1.6em;
+
+                  }
+
+
+              }
+
+
+          }
+
+
+          .footer-item-two {
+              height: 270px;
+
+              text-align: center;
+
+              ul {
+                  padding: 0px;
+              }
+
+              h3 {
+
+                  font-size: 1.9em;
+              }
+
+              li {
+                  font-size: 1.9em;
+              }
+          }
+
+          .footer-item-three {
+
+              height: 280px;
+
+
+              text-align: center;
+
+              ul {
+                  padding: 0px;
+              }
+
+              h3 {
+
+                  font-size: 1.9em;
+              }
+
+              li {
+                  font-size: 1.9em;
+              }
+          }
+
+          .footer-item-four {
+
+              padding: 5% 5% 5% 5%;
+
+
+              table {
+
+                  font-size: 1.6em;
+                  ;
+              }
+          }
+
+          //Facebook, twitter ...
+          .footer-base {
+
+
+              .footer-base-text {
+
+                  font-size: 1.5em;
+                  text-align: center;
+
+
+
+                  p {
+                      padding-top: 8px;
+                  }
+              }
+
+          }
+      }
+
+  } */
 }
 
 /* 
@@ -1508,7 +1657,61 @@ body {
     //CSS
 
     body {
+        nav {
 
+            ul {
+                .nav-link {
+                    font-size: 1.9em;
+                }
+
+                #logo {
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        .services {
+            height: 2079px;
+
+            .flex-container>.flex-item:nth-child(1) {}
+
+            .flex-container>.flex-item:nth-child(1) {
+                grid-column: 2/5;
+
+            }
+
+            .flex-container>.flex-item:nth-child(2) {
+                //  display: none;
+                grid-row: 6;
+                grid-column: 2/5;
+            }
+
+            .flex-container>.flex-item:nth-child(3) {
+                grid-row: 11;
+                grid-column: 2/5;
+            }
+
+            .flex-container>.flex-item:nth-child(4) {
+                grid-row: 16;
+                grid-column: 2/5;
+            }
+
+            .flex-container {
+
+                display: grid;
+                grid-template-columns: repeat(5, 20%);
+                grid-template-rows: repeat(20, 10%);
+
+                p {}
+            }
+
+            .flex-container>.flex-item:nth-child(1) {
+                grid-column: 2/5;
+            }
+        }
 
         .footer {
             height: 1420px;
@@ -1595,6 +1798,7 @@ body {
 
 
                 table {
+
 
                     font-size: 1.6em;
                     ;

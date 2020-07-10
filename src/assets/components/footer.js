@@ -54,37 +54,39 @@ export default function Footer() {
                 </div>
                 <div className={"footer-item-four"}>
                     <table>
-                        <tr>
-                            <th>{"OPENING TIME"}</th>
-                        </tr>
-                        <tr>
-                            <td className={"day"}>{"Monday"}</td>
-                            <td>{"08:00 - 17:30"}</td>
-                        </tr>
-                        <tr>
-                            <td className={"day"}>{"Tuesday"}</td>
-                            <td>{"08:00 - 17:30"}</td>
-                        </tr>
-                        <tr>
-                            <td className={"day"}>{"Wednesday"}</td>
-                            <td>{"08:00 - 17:30"}</td>
-                        </tr>
-                        <tr>
-                            <td className={"day"}>{"Thursday"}</td>
-                            <td>{"08:00 - 17:30"}</td>
-                        </tr>
-                        <tr>
-                            <td className={"day"}>{"Friday"}</td>
-                            <td>{"08:00 - 17:30"}</td>
-                        </tr>
-                        <tr>
-                            <td className={"day"}>{"Saturday"}</td>
-                            <td>{"12:00 - 17:30"}</td>
-                        </tr>
-                        <tr>
-                            <td className={"day"}>{"Sunday"}</td>
-                            <td>{"CLOSED"}</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <th>{"OPENING TIME"}</th>
+                            </tr>
+                            <tr>
+                                <td className={"day"}>{"Monday"}</td>
+                                <td>{"08:00 - 17:30"}</td>
+                            </tr>
+                            <tr>
+                                <td className={"day"}>{"Tuesday"}</td>
+                                <td>{"08:00 - 17:30"}</td>
+                            </tr>
+                            <tr>
+                                <td className={"day"}>{"Wednesday"}</td>
+                                <td>{"08:00 - 17:30"}</td>
+                            </tr>
+                            <tr>
+                                <td className={"day"}>{"Thursday"}</td>
+                                <td>{"08:00 - 17:30"}</td>
+                            </tr>
+                            <tr>
+                                <td className={"day"}>{"Friday"}</td>
+                                <td>{"08:00 - 17:30"}</td>
+                            </tr>
+                            <tr>
+                                <td className={"day"}>{"Saturday"}</td>
+                                <td>{"12:00 - 17:30"}</td>
+                            </tr>
+                            <tr>
+                                <td className={"day"}>{"Sunday"}</td>
+                                <td>{"CLOSED"}</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div className={"footer-base"}>

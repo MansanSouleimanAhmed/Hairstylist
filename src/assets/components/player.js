@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
 import ReactPlayer from "react-player/lazy";
 export default function Player(props) {
+    //   console.log("mansan " + props.height);
     return (
         <Fragment>
             <ReactPlayer
