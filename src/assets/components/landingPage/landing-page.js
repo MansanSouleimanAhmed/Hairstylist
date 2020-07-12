@@ -1,11 +1,13 @@
 import React, {Fragment} from "react";
+import {Parallax, Background} from "react-parallax";
 import Header from "../header";
 import Slide from "../slide";
 import AntiAgeImg from "../../img/models/anti-age-img.jpg";
+import ShortHairImg from "../../img/models/banner/imgFour.jpg";
 import FeaturedProductImgOne from "../../img/landing-page/Capture d’écran de 2020-07-01 16-59-11.png";
 
 import FeaturedProductImgTwo from "../../img/landing-page/Capture d’écran de 2020-07-01 19-23-34.png";
-import {Parallax, Background} from "react-parallax";
+
 import Player from "../player";
 import Footer from "../footer";
 
@@ -41,23 +43,24 @@ export default function LandingPage() {
 
                     <div className={"anti-age-hair-container"}>
                         <Parallax
-                            bgImage={AntiAgeImg}
-                            strength={130}
+                            bgImage={ShortHairImg}
+                            strength={150}
                             className={".img-parallax"}
                             style={{
                                 height: "300px",
                                 background: "red",
-                            }}></Parallax>
-
-                        <div className={"anti-age-hair-text"}>
-                            <h5>{"WE WANT YOUR HAIR TO LOOK FABULOUS"}</h5>
-                            <h1>{"ANTI-AGE YOUR HAIR "}</h1>
-                            <p>
-                                {
-                                    "Scenester Etsy aesthetic, Cosby sweater keytclaar sustainable forage. Synth vinyl biodiesel, pour-over forage Helvetica selvage XOXO mumblecore literally pop-up locavore. Blue Bottle bicycle rights photo booth, cray single-origin coffee locavore fanny pack American Apparel cornhole hella."
-                                }
-                            </p>
-                        </div>
+                            }}>
+                            {" "}
+                            <div className={"anti-age-hair-text"}>
+                                <h5>{"WE WANT YOUR HAIR TO LOOK FABULOUS"}</h5>
+                                <h1>{"ANTI-AGE YOUR HAIR "}</h1>
+                                <p>
+                                    {
+                                        "Scenester Etsy aesthetic, Cosby sweater keytclaar sustainable forage. Synth vinyl biodiesel, pour-over forage Helvetica selvage XOXO mumblecore literally pop-up locavore. Blue Bottle bicycle rights photo booth, cray single-origin coffee locavore fanny pack American Apparel cornhole hella."
+                                    }
+                                </p>
+                            </div>
+                        </Parallax>
                     </div>
                     <div className={"featured-product"}>
                         <div className={"featured-product-item-one"}>

@@ -25,7 +25,6 @@ export class MapContainer extends Component {
         const position = [this.state.lat, this.state.lng];
         return (
             <div>
-                return (
                 <Map
                     className={"map-item"}
                     center={position}
