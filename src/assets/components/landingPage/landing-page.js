@@ -1,5 +1,12 @@
-import React, {Fragment} from "react";
+import React, {
+    Fragment,
+    useLayoutEffect,
+    useState,
+    useEffect,
+    useRef,
+} from "react";
 import {Parallax, Background} from "react-parallax";
+import Aos from "aos/dist/aos.css";
 import Header from "../header";
 import Slide from "../slide";
 import AntiAgeImg from "../../img/models/anti-age-img.jpg";
@@ -12,6 +19,41 @@ import Player from "../player";
 import Footer from "../footer";
 
 export default function LandingPage() {
+    const [divSize, setDivsize] = useState(0);
+    const [antiAge, setantiAge] = useState(0);
+    const [arrayQueries, setarrayQueries] = useState([]);
+
+    const divHeight = useRef(0);
+    useEffect(() => {
+        //  Aos.init({duration: 2000});
+
+        function fetchQueries() {
+            fetch("https://jsonplaceholder.typicode.com/comments")
+                .then(response => response.json())
+                .then(json => setarrayQueries(json));
+        }
+        fetchQueries();
+    }, []);
+    console.log(arrayQueries);
+    /*     useEffect(() => {
+        getHeight();
+        function getHeight() {
+            setDivsize(divHeight.current.clientHeight);
+        }
+        window.addEventListener("resize", getHeight);
+        return () => window.removeEventListener("resize", getHeight);
+    }, []); */
+    console.log("test " + divSize);
+    /*  function test() {
+        useLayoutEffect(() => {
+            function updateHeight() {}
+            window.addEventListener("resize", updateHeight);
+            updateHeight();
+            return () => window.removeEventListener("resize", updateHeight);
+        }, []);
+        return antiAge;
+    }
+ */
     let url =
         "https://www.youtube.com/watch?v=20Zw7HJStwo&list=PLGQNRg69XpETvMHYznKmPpPAgHLT4OcyN";
     return (
@@ -41,16 +83,15 @@ export default function LandingPage() {
                     </div>
                     <Slide />
 
-                    <div className={"anti-age-hair-container"}>
+                    <div className={"anti-age-hair-container"} ref={divHeight}>
                         <Parallax
                             bgImage={ShortHairImg}
                             strength={150}
                             className={".img-parallax"}
                             style={{
-                                height: "300px",
-                                background: "red",
+                                height: "365px",
+                                background: "black",
                             }}>
-                            {" "}
                             <div className={"anti-age-hair-text"}>
                                 <h5>{"WE WANT YOUR HAIR TO LOOK FABULOUS"}</h5>
                                 <h1>{"ANTI-AGE YOUR HAIR "}</h1>
@@ -76,7 +117,7 @@ export default function LandingPage() {
                         <div className={"featured-product-item-three"}>
                             <div>
                                 <Player
-                                    width={390}
+                                    width={290}
                                     height={390}
                                     url={
                                         "https://www.youtube.com/watch?v=20Zw7HJStwo&list=PLGQNRg69XpETvMHYznKmPpPAgHLT4OcyN"
@@ -84,6 +125,20 @@ export default function LandingPage() {
                                 />
                             </div>
                         </div>
+                    </div>
+                    <div className={"commentaire-container"}>
+                        {arrayQueries.slice(0, 5).map((item, index) => {
+                            return (
+                                <div className={"comment-item"} key={index}>
+                                    <div className={"name"}>{item.name}</div>
+                                    <div
+                                        className={"comments"}
+                                        style={{backgroundColor: "red"}}>
+                                        {item.body}
+                                    </div>
+                                </div>
+                            );
+                        })}
                     </div>
                 </section>
                 <Footer />

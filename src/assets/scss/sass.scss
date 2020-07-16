@@ -267,7 +267,6 @@ body {
                         border: solid 2px;
                         font-size: 1em;
                         text-align: center;
-
                         z-index: 3;
                         color: #fff;
                     }
@@ -283,16 +282,12 @@ body {
                 }
 
                 .banner-item {
-                    //  background-color: #000;
+
                     min-width: 100%;
                     height: 100%;
                     transition: ease-in-out 1.5s;
 
-                    .img-landing-page {
-
-                        //height: 100%;
-                        img {}
-                    }
+                    .img-landing-page {}
 
                     .title-little {
                         position: absolute;
@@ -319,68 +314,10 @@ body {
 
         .section-landing-page {
 
-            /*    .services-introdution {
-                display: flex;
-                flex-direction: column;
-                background-color: rgb(224, 98, 98);
-                justify-content: space-around;
-
-
-                .item-landing-page {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    background-color: #000000;
-                    width: 100%;
-                    height: 70px;
-
-
-                    #img-one-landing-page {
-                        width: 30%;
-                        height: 50px;
-                        background-color: rgb(94, 80, 80);
-                    }
-
-                    #text-one-landing-page {
-
-                        width: 60%;
-                        height: 50px;
-                        background-color: rgb(94, 80, 80);
-                    }
-
-                    #img-two-landing-page {
-                        width: 30%;
-                        height: 50px;
-                        background-color: rgb(94, 80, 80);
-                    }
-
-                    #text-two-landing-page {
-                        width: 60%;
-                        height: 50px;
-                        background-color: rgb(94, 80, 80);
-                    }
-
-                    #img-three-landing-page {
-                        width: 30%;
-                        height: 50px;
-                        background-color: rgb(94, 80, 80);
-                    }
-
-                    #text-three-landing-page {
-                        width: 60%;
-                        height: 50px;
-                        background-color: rgb(94, 80, 80);
-                    }
-
-                }
-
-
-
-            } */
             //The hr award and product div
             hr {
                 width: 50px;
-                background-color: rgb(161, 5, 5);
+
                 height: 3px;
             }
 
@@ -478,32 +415,15 @@ body {
                     h1 {
                         font-size: 2.7em;
                     }
-
-                    /*      p {
-         padding: 10px 0px 10px 0px 0px;
-         font-size: 1.9em;
-         line-height: 1.2em;
-         font-weight: bold;
-     } */
-
-                    /*    h5 {
-       font-weight: 400;
-       font-size: 2.2em;
-       line-height: 1.7em;
-   } */
                 }
 
                 .anti-age-hair-text {
-                    //  position: absolute;
-
                     padding: 0% 10% 0% 10% 0%;
                     width: 80%;
-                    height: inherit;
+                    height: 370px;
                     display: flex;
                     justify-content: space-around;
                     flex-direction: column;
-                    //  background-color: rgba(211, 202, 75, 0.5);
-
                     box-sizing: content-box;
                     color: #fff;
                     font-weight: bold;
@@ -528,11 +448,7 @@ body {
             .featured-product {
                 position: relative;
                 width: 100%;
-                display: grid;
-                grid-row: 3;
                 text-align: center;
-                grid-gap: 50px;
-                padding: 50px 0px 50px 0px;
 
                 img {
                     height: 150px;
@@ -540,11 +456,11 @@ body {
                 }
 
                 .featured-product-item-one {
-                    padding: 20px;
                     word-wrap: break-word;
 
                     h2 {
-                        font-size: 2.7em;
+                        font-size: 1.9em;
+                        word-break: break-word;
                     }
 
                     p {
@@ -552,13 +468,9 @@ body {
                     }
                 }
 
-                .featured-product-item-two {
-                    padding: 40px;
-                }
+                .featured-product-item-two {}
 
                 .featured-product-item-three {
-                    text-align: center;
-
                     div {
                         display: inline-block;
                     }
@@ -1579,7 +1491,6 @@ body {
             .section-landing-page {
 
 
-                //The hr award and product div
                 hr {
                     width: 50px;
                     background-color: rgb(161, 5, 5);
@@ -1673,38 +1584,24 @@ body {
                         padding: 0% 5% 0% 5%;
                         width: 90%;
 
-                        // padding: 10px;
                         color: #fff;
                         background-color: rgba($color: #000000, $alpha: 0.3);
 
                         h1 {
                             font-size: 2.7em;
                         }
-
-                        /*      p {
-             padding: 10px 0px 10px 0px 0px;
-             font-size: 1.9em;
-             line-height: 1.2em;
-             font-weight: bold;
-         } */
-
-                        /*    h5 {
-           font-weight: 400;
-           font-size: 2.2em;
-           line-height: 1.7em;
-       } */
                     }
 
                     .anti-age-hair-text {
-                        //  position: absolute;
+
 
                         padding: 0% 10% 0% 10% 0%;
                         width: 80%;
-                        height: inherit;
+
                         display: flex;
                         justify-content: space-around;
                         flex-direction: column;
-                        //  background-color: rgba(211, 202, 75, 0.5);
+
 
                         box-sizing: content-box;
                         color: #fff;
@@ -1768,21 +1665,7 @@ body {
                 }
             }
 
-            /* 
-            .about-us {
-    
-    .background-img {
-                    display: grid;
-                    background-color: red;
-    
-                    img {
-                        height: auto;
-                        max-width: 100%;
-                    }
-                }
-    
-            
-    } */
+
         }
 
         .contact-page {

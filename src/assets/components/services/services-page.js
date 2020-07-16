@@ -46,27 +46,7 @@ export default function Services() {
         }
     });
 
-    /*  useEffect(() => {
-        if (sizeWid > 450) {
-            setHeightOne(350);
-        } else {
-            setHeightOne(10);
-        }
-    }); */
-
     console.log("change :" + little);
-    /*   sizeWid = sizeWidth();
-    console.log(sizeWid); */
-    /*  useEffect(() => {
-       // test();
-    }, [heightOne]); */
-    // console.log(heightOne);
-    /*  let testV;
-    testV = test();
-    console.log(testV); */
-    // console.log("test :" + test());
-
-    // console.log(size);
 
     return (
         <div>

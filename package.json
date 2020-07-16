@@ -13,6 +13,7 @@
   "dependencies": {
     "@rehooks/window-scroll-position": "^1.0.1",
     "@types/react-leaflet": "^2.5.2",
+    "aos": "^2.3.4",
     "assets": "^3.0.1",
     "leaflet": "^1.6.0",
     "react": "^16.13.1",
