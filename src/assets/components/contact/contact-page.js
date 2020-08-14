@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import Header from "../header";
 import Footer from "../footer";
 import MapContainer from "./map-container";
+
 export default function ContactPage() {
     return (
         <Fragment>

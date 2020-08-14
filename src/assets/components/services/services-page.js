@@ -2,6 +2,8 @@ import React, {Fragment, useLayoutEffect, useState, useEffect} from "react";
 import Header from "../header";
 import Footer from "../footer";
 import Player from "../../components/player";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Services() {
     const [little, setLittle] = useState(0);
     const [heightOne, setHeightOne] = useState(150);
@@ -45,8 +47,6 @@ export default function Services() {
             setWidthtOne(700);
         }
     });
-
-    console.log("change :" + little);
 
     return (
         <div>

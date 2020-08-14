@@ -2,11 +2,7 @@ import React, {Component} from "react";
 import {Map, TileLayer, Marker, Popup} from "react-leaflet";
 import ImageIcon from "../../img/salon-map-icon.png";
 import L from "leaflet";
-/* type State = {
-    lat: number,
-    lng: number,
-    zoom: number,
-}; */
+
 let myIcon = L.icon({
     iconUrl: ImageIcon,
     iconSize: [20, 30],
