@@ -238,6 +238,7 @@ body {
                 display: flex;
                 overflow: hidden;
 
+
                 .title-buttons-container {
                     #right-button {
                         position: absolute;
@@ -303,9 +304,9 @@ body {
         .section-landing-page {
 
             //The hr award and product div
+
             hr {
                 width: 50px;
-
                 height: 3px;
             }
 
@@ -384,10 +385,12 @@ body {
 
             .anti-age-hair-container {
                 position: relative;
-                height: 300px;
+                height: 450px;
                 width: 100%;
                 display: grid;
                 box-sizing: content-box;
+                background-color: rgb(37, 1, 1);
+
 
                 .anti-age-hair-text {
                     position: absolute;
@@ -395,10 +398,11 @@ body {
                     left: 0%;
                     padding: 0% 5% 0% 5%;
                     width: 90%;
-
-                    // padding: 10px;
+                    height: 450px;
                     color: #fff;
+                    z-inde: 1;
                     background-color: rgba($color: #000000, $alpha: 0.3);
+
 
                     h1 {
                         font-size: 2.7em;
@@ -408,7 +412,7 @@ body {
                 .anti-age-hair-text {
                     padding: 0% 10% 0% 10% 0%;
                     width: 80%;
-                    height: 370px;
+                    height: 450px;
                     display: flex;
                     justify-content: space-around;
                     flex-direction: column;
@@ -433,10 +437,15 @@ body {
                 }
             }
 
+            .slide {
+                margin: 150px 0px 150px 0px;
+            }
+
             .featured-product {
                 position: relative;
                 width: 100%;
                 text-align: center;
+                margin: 100px 0px 100px 0px;
 
                 img {
                     height: 150px;
@@ -469,8 +478,9 @@ body {
                 .comment-item {
                     height: 20%;
                     padding: 3%;
-                    background-color: rgb(165, 165, 165);
+                    background-color: rgb(37, 1, 1);
                     font-size: 1.5em;
+                    color: #fff;
 
                     .comments {
                         padding-top: 2%;
@@ -697,6 +707,7 @@ body {
 
 @media (min-width: 1975px) {
     body {
+
         nav {
             ul {
                 .nav-link {
@@ -715,6 +726,9 @@ body {
         .landing-page {
             .header {
                 .banner-contain {
+
+                    height: 100vh;
+
                     h3 {
                         font-size: 3.2em;
                     }
@@ -739,6 +753,28 @@ body {
                             width: 50px;
                         }
                     }
+                }
+            }
+
+            .section-landing-page {
+                .featured-product {
+                    margin: 100px 0px 100px 0px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .featured-product-item-one {}
+
+                    .featured-product-item-two {}
+
+                    .featured-product-item-three {}
+                }
+            }
+
+            .commentaire-container {
+                .comment-item {
+                    font-size: 4em;
+
+                    .comments {}
                 }
             }
         }
@@ -906,7 +942,7 @@ body {
         nav {
             ul {
                 .nav-link {
-                    font-size: 5.1em;
+                    font-size: 3.1em;
                 }
 
                 #logo {
@@ -935,13 +971,15 @@ body {
         .landing-page {
             .header {
                 .banner-contain {
+                    height: 100vh;
+
                     h3 {
                         font-size: 3.2em;
                     }
 
                     .title-little {
                         margin-top: 20px;
-                        top: 61% !important;
+                        top: 70% !important;
                     }
 
                     .title-buttons-container {
@@ -958,6 +996,28 @@ body {
                             height: 50px;
                             width: 50px;
                         }
+                    }
+                }
+            }
+
+            .section-landing-page {
+                .featured-product {
+                    margin: 100px 0px 100px 0px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    .featured-product-item-one {}
+
+                    .featured-product-item-two {}
+
+                    .featured-product-item-three {}
+                }
+
+                .commentaire-container {
+                    .comment-item {
+                        font-size: 2.8em;
+
+                        .comments {}
                     }
                 }
             }
@@ -1118,7 +1178,21 @@ body {
         }
 
         .landing-page {
+            .section-landing-page {
+                .featured-product {
+                    margin: 100px 0px 100px 0px;
+                    display: flex;
+
+                    .featured-product-item-one {}
+
+                    .featured-product-item-two {}
+
+                    .featured-product-item-three {}
+                }
+            }
+
             .header {
+
                 .banner-contain {
                     h3 {
                         font-size: 2.4em;
@@ -1143,6 +1217,25 @@ body {
                             width: 60px;
                         }
                     }
+                }
+
+            }
+
+            .section-landing-page {
+
+
+
+                .featured-product {
+
+
+
+
+
+                    .featured-product-item-one {}
+
+                    .featured-product-item-one {}
+
+                    .featured-product-item-one {}
                 }
             }
         }
@@ -1439,7 +1532,7 @@ body {
 
                 .anti-age-hair-container {
                     position: relative;
-                    height: 300px;
+                    height: 450px;
                     width: 100%;
                     display: grid;
                     box-sizing: content-box;
@@ -1527,6 +1620,14 @@ body {
                         }
                     }
                 }
+
+                .commentaire-container {
+                    .comment-item {
+                        font-size: 1.8em;
+
+                        .comments {}
+                    }
+                }
             }
         }
 
@@ -1552,7 +1653,6 @@ body {
             }
 
             .flex-container>.flex-item:nth-child(2) {
-                //  display: none;
                 grid-row: 6;
                 grid-column: 2/5;
             }

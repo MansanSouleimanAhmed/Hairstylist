@@ -18,7 +18,7 @@ export default function Slide() {
         ].map((num, index) => <div key={index}>{num}</div>);
 
     return (
-        <div className={"App"}>
+        <div className={"slide"}>
             <Slider
                 dots={true}
                 slidesToScroll={1}

@@ -5,7 +5,7 @@ export default function ImgBanner({src, props}) {
     function project() {
         switch (props) {
             case "one":
-                return <h3>{"We still. You  smile."}</h3>;
+                return <h3>{"We style. You  smile."}</h3>;
             case "two":
                 return <h3>{"Get happy hair, get happy life."}</h3>;
             case "three":
