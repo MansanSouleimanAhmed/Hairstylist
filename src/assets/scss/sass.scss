@@ -548,41 +548,63 @@ body {
     }
 
     //services initial
-    .services {
-        height: 1700px;
-        background-color: #000000;
+    .services-page {
 
-        //test test
-        .flex-container {
-            height: 1000px;
-            text-align: center;
-            padding-top: 78px;
+        background-color: #270101;
 
-            .flex-item {
-                height: 150px;
-                width: 250px;
-                margin-bottom: 150px;
-                display: inline-block;
-                background-color: rgb(48, 15, 15);
-                margin: 25px 0px 25px 0px;
+        .banner-service {
+            position: fixed;
+            height: 400px;
+            width: 100%;
+            background: url("../img/models/banner/imgThree.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
 
-                h2 {
-                    color: #fff;
-                    font-size: 1.8em;
-                }
+        .services {
+            margin-top: 700px;
+            background-color: #270101;
+            perspective: 2px;
+            height: 1700px;
 
-                p {
-                    font-size: 2.3em;
-                    margin: 10px 0px 10px 0px;
-                    //s margin: 15px 0px 15px 0px;
-                    color: #fff;
+
+
+            .flex-container {
+                text-align: center;
+                padding-top: 78px;
+
+                .flex-item {
+                    height: 150px;
+                    width: 250px;
+                    margin-bottom: 150px;
+                    display: inline-block;
+                    background-color: rgb(48, 15, 15);
+                    margin: 25px 0px 25px 0px;
+
+                    h2 {
+                        color: #fff;
+                        font-size: 1.8em;
+                    }
+
+                    p {
+                        font-size: 2.3em;
+                        margin: 10px 0px 10px 0px;
+                        color: #fff;
+                    }
                 }
             }
+
         }
+
     }
+
 
     ///Footer
     .footer {
+        perspective: 2px;
         height: 1205px;
         width: 100%;
         background-color: #000;
@@ -1017,7 +1039,6 @@ body {
                     .comment-item {
                         font-size: 2.8em;
 
-                        .comments {}
                     }
                 }
             }
@@ -1226,7 +1247,6 @@ body {
 
 
                 .featured-product {
-
 
 
 
@@ -1452,8 +1472,9 @@ body {
 
             .section-landing-page {
                 hr {
+
                     width: 50px;
-                    background-color: rgb(161, 5, 5);
+
                     height: 3px;
                 }
 
@@ -1569,7 +1590,7 @@ body {
                         }
 
                         p {
-                            font-size: 1.5em;
+                            font-size: 1.8em;
                             line-height: 1.4em;
                         }
 

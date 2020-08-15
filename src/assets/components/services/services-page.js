@@ -22,7 +22,7 @@ export default function Services() {
 
         return size;
     }
-    console.log("fsdsdsdfd :" + sizeWidth());
+    // console.log("fsdsdsdfd :" + sizeWidth());
     let sizeWid;
     sizeWid = sizeWidth();
     useEffect(() => {
@@ -49,7 +49,7 @@ export default function Services() {
     });
 
     return (
-        <div>
+        <div className={"services-page"}>
             <Header />
             <section className={"services"}>
                 <div className={"services-item"}>
@@ -125,6 +125,7 @@ export default function Services() {
                     </div>
                 </div>
             </section>
+
             <Footer />
         </div>
     );

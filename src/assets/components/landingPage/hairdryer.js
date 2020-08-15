@@ -4,7 +4,7 @@ export default function Hairdryer() {
     return (
         <div className={"products-slide"}>
             <h2>{"OUR PRODUCTS"}</h2>
-            <hr />
+            <hr style={{backgroundColor: "rgb(255, 20, 20)"}} />
             <div className={"img-products"}>
                 <img src={HairdryerImg} alt={"hairdryer"} />
             </div>

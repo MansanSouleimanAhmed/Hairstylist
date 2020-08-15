@@ -85,7 +85,7 @@ export default function LandingPage() {
 
                     <div className={"awarded"}>
                         <h2>{"Awarded"}</h2>
-                        <hr />
+                        <hr style={{backgroundColor: "rgb(255, 20, 20)"}} />
                         <h3>{"One of the best salon in London"}</h3>
                     </div>
                     <Slide />
