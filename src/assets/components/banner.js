@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
-import ImgOne from "./../img/models/banner/blond-girl .jpg";
-import ImgTwo from "./../img/models/banner/test5.jpg";
-import ImgThree from "./../img/models/banner/imgone.jpg";
+import ImgOne from "../img/blond-girl .jpg";
+import ImgTwo from "../img/brown-girl-banner.jpg";
+import ImgThree from "../img/brown-girl-white-shirt-banner.jpg";
 import ImgBanner from "./landingPage/img";
-import ImgButtonRignt from "./../img/lightbox-next.png";
-import ImgButtonLeft from "./../img/lightbox-prev.png";
+
+import ImgButtonRignt from "./../min-image/lightbox-next.png";
+import ImgButtonLeft from "./../min-image/lightbox-prev.png";
 
 const Banner = () => {
     let arrayBanner = [
@@ -17,7 +18,6 @@ const Banner = () => {
         translateXValue === 0
             ? settranslateXValue(0)
             : settranslateXValue(translateXValue + 100);
-        //   console.log(translateXValue);
     };
     const slideRight = () => {
         translateXValue === -100 * (arrayBanner.length - 1)
@@ -27,7 +27,6 @@ const Banner = () => {
     useEffect(() => {
         var init = setInterval(() => {
             settranslateXValue(translateXValue - 100);
-            //  console.log(translateXValue);
             if (translateXValue === -200) {
                 settranslateXValue(0);
             }

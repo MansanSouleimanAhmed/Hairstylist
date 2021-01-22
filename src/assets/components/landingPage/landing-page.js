@@ -10,12 +10,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "../header";
 import Slide from "../slide";
-import AntiAgeImg from "../../img/models/anti-age-img.jpg";
-import ShortHairImg from "../../img/models/banner/imgFour.jpg";
-import FeaturedProductImgOne from "../../img/landing-page/Capture d’écran de 2020-07-01 16-59-11.png";
+import AntiAgeImg from "../../min-image/anti-age-img.jpg";
+import ShortHairImg from "../../min-image/imgFour.jpg";
+import FeaturedProductImgOne from "../../min-image/feature-product.png";
 import {useSpring, animated} from "react-spring";
 
-import FeaturedProductImgTwo from "../../img/landing-page/Capture d’écran de 2020-07-01 19-23-34.png";
+import FeaturedProductImgTwo from "../../min-image/hair-products.png";
 
 import Player from "../player";
 import Footer from "../footer";

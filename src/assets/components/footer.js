@@ -1,12 +1,12 @@
 import React, {Fragment} from "react";
-import FacebookImg from "../img/footer/facebook-icon.png";
-import VimeoImg from "../img/footer/vimeo-icon.png";
-import TwitterImg from "../img/footer/twitter-icon.png";
-import EmailImg from "../img/footer/email-icon.png";
-import InstagramImg from "../img/footer/instagram-icon.png";
-import MasterCardImg from "../img/footer/master-card.png";
-import VisaCardImg from "../img/footer/visa-card.png";
-import AmericanCardImg from "../img/footer/american-express-card.png";
+import FacebookImg from "../min-image/facebook-icon.png";
+import VimeoImg from "../min-image/vimeo-icon.png";
+import TwitterImg from "../min-image/twitter-icon.png";
+import EmailImg from "../min-image/email-icon.png";
+import InstagramImg from "../min-image/instagram-icon.png";
+import MasterCardImg from "../min-image/master-card.png";
+import VisaCardImg from "../min-image/visa-card.png";
+import AmericanCardImg from "../min-image/american-express-card.png";
 
 export default function Footer() {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import HairdryerGrayImg from "../../img/products-to-sell/hairdryer-gray.png";
+import HairdryerGrayImg from "../../min-image/hairdryer-gray.png";
 export default function Hairdryergray() {
     return (
         <div className={"products-slide"}>

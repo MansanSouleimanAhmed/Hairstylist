@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import ImgContact from "../../img/models/contact/salon.jpg";
+import ImgContact from "../../min-image/salon.jpg";
 export default function BannerContact() {
     return (
         <Fragment>

@@ -1,5 +1,5 @@
 import React from "react";
-import HairStraightenerBlackImg from "../../img/products-to-sell/hair-straightener-black.png";
+import HairStraightenerBlackImg from "../../min-image/hair-straightener-black.png";
 export default function Hairstraightenerblack() {
     return (
         <div className={"products-slide"}>

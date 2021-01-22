@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Map, TileLayer, Marker, Popup} from "react-leaflet";
-import ImageIcon from "../../img/salon-map-icon.png";
+import ImageIcon from "../../min-image/salon-map-icon.png";
 import L from "leaflet";
 
 let myIcon = L.icon({

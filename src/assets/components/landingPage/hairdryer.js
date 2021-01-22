@@ -1,5 +1,5 @@
 import React from "react";
-import HairdryerImg from "../../img/products-to-sell/hairdryer.png";
+import HairdryerImg from "../../min-image/hairdryer.png";
 export default function Hairdryer() {
     return (
         <div className={"products-slide"}>
